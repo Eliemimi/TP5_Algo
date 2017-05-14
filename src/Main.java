@@ -10,10 +10,10 @@ public class Main {
 		priorityQueue.add(new Edge(1, 3, 0.20));
 		priorityQueue.add(new Edge(1, 4, 0.30));
 		priorityQueue.add(new Edge(3, 4, 0.56));
-		Edge e = null;
+		Edge e = (Edge) priorityQueue.poll();
 		do {
-			e = (Edge) priorityQueue.poll();
-			System.out.println(e);
+			System.out.println(e.weight);
+			
 		} while (e != null);
 	}
 
