@@ -13,7 +13,7 @@ public class Main {
 		Edge e = (Edge) priorityQueue.poll();
 		do {
 			System.out.println(e.weight);
-			
+			e = (Edge) priorityQueue.poll();
 		} while (e != null);
 	}
 

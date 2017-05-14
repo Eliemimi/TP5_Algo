@@ -10,7 +10,8 @@ public class PrimMST {
 		
 	}
 	
-	public void edges() {
+	public void edges(EdgeWeightedGraph G, int S) {
+		
 		
 	}
 	
