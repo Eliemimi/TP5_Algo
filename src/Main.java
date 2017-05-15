@@ -12,7 +12,7 @@ public class Main {
 		priorityQueue.add(new Edge(3, 4, 0.56));
 		Edge e = (Edge) priorityQueue.poll();
 		do {
-			System.out.println(e.weight);
+			System.out.println(wdGraph.getAdj()[0]);
 			e = (Edge) priorityQueue.poll();
 		} while (e != null);
 	}

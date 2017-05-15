@@ -7,10 +7,21 @@ public class PrimMST {
 	
 	
 	public void prim(EdgeWeightedGraph G, int s) {
-		
+		edges(G, s);
 	}
 	
 	public void edges(EdgeWeightedGraph G, int S) {
+		int nbvertices = 0;
+		ArrayList<ArrayList<Integer>> visited;
+		PriorityQueue priorityQueue = new PriorityQueue();
+		priorityQueue.add(S);
+		while (nbvertices < G.getNodeCount()){
+			int noeud = (int) priorityQueue.poll();
+			
+			Float voisin = G.getAdj()[noeud].get(0).get(0);
+			System.out.println(voisin);
+			nbvertices = G.getNodeCount();
+		}
 		
 		
 	}
